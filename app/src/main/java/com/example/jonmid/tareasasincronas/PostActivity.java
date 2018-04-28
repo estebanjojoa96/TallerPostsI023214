@@ -25,7 +25,7 @@ import java.util.List;
 public class PostActivity extends AppCompatActivity {
 
     List<Post> PostList = new ArrayList<>();
-    PostAdapter PostAdapter;
+    PostAdapter postAdapter;
     RecyclerView recyclerView;
 
     @Override
@@ -64,8 +64,8 @@ public class PostActivity extends AppCompatActivity {
     }
 
     public void processData(){
-        PostAdapter = new PostAdapter(PostList, getApplicationContext());
-        recyclerView.setAdapter(PostAdapter);
+        postAdapter = new PostAdapter(PostList, getApplicationContext());
+        recyclerView.setAdapter(postAdapter);
     }
 
 

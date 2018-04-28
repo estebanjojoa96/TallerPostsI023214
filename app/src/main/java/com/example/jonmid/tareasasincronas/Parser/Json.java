@@ -25,13 +25,13 @@ public class Json {
             JSONObject item = jsonArray.getJSONObject(i);
 
             Post post = new Post();
-            post.setId(item.getInt("id"));
+            post.setId(item.getString("id"));
             post.setTitle(item.getString("title"));
             post.setBody(item.getString("body"));
 
             postList.add(post);
-
         }
+
 
         return postList;
     }
